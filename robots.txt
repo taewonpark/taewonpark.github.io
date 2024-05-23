@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://taewonpark.github.io/al-folio/sitemap.xml
+Sitemap: https://taewonpark.github.io/sitemap.xml
