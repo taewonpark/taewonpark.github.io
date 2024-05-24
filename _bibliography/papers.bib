@@ -1,113 +1,52 @@
 ---
 ---
 
-@string{aps = {American Physical Society,}}
-
-@book{einstein1920relativity,
-  title={Relativity: the Special and General Theory},
-  author={Einstein, Albert},
-  year={1920},
-  publisher={Methuen & Co Ltd},
-  html={relativity.html}
+@inproceedings{park2023attention,
+  title={Attention-based Iterative Decomposition for Tensor Product Representation},
+  author={Park, Taewon and Choi, Inchul and Lee, Minho},
+  booktitle={The Twelfth International Conference on Learning Representations},
+  year={2024},
+  publisher={ICLR},
+  abstract={In recent research, Tensor Product Representation (TPR) is applied for the systematic generalization task of deep neural networks by learning the compositional structure of data. However, such prior works show limited performance in discovering and representing the symbolic structure from unseen test data because of the incomplete bindings to the structural representations. In this work, we propose an Attention-based Iterative Decomposition (AID) module that can effectively improve the binding for the structured representations encoded from the sequential input features with TPR. Our AID can be easily adapted to any TPR-based model and provides enhanced systematic decomposition through a competitive attention mechanism between input features and structured representations. In our experiments, AID shows effectiveness by significantly improving the performance of TPR-based prior works on the series of systematic generalization tasks. Moreover, in the quantitative and qualitative evaluations, AID produces more compositional and well-bound structural representations than other works.},
+  selected={true},
+  pdf={https://openreview.net/pdf?id=FDb2JQZsFH},
+  
 }
 
-@book{einstein1956investigations,
-  bibtex_show={true},
-  title={Investigations on the Theory of the Brownian Movement},
-  author={Einstein, Albert},
-  year={1956},
-  publisher={Courier Corporation},
-  preview={brownian-motion.gif}
+@inproceedings{bae2022learning,
+  title={Learning Associative Reasoning Towards Systematicity Using Modular Networks},
+  author={Bae, Jun-Hyun and Park, Taewon and Lee, Minho},
+  booktitle={International Conference on Neural Information Processing},
+  pages={113--122},
+  year={2022},
+  organization={Springer},
+  publisher={ICONIP},
+  abstract={Learning associative reasoning is necessary to implement human-level artificial intelligence even when a model faces unfamiliar associations of learned components. However, conventional memory augmented neural networks (MANNs) have shown degraded performance on systematically different data since they lack consideration of systematic generalization. In this work, we propose a novel architecture for MANNs which explicitly aims to learn recomposable representations with a modular structure of RNNs. Our method binds learned representations with a Tensor Product Representation (TPR) to manifest their associations and stores the associations into TPR-based external memory. In addition, to demonstrate the effectiveness of our approach, we introduce a new benchmark for evaluating systematic generalization performance on associative reasoning, which contains systematically different combinations of words between training and test data. From the experimental results, our method shows superior test accuracy on systematically different data compared to other models. Furthermore, we validate the models using TPR by analyzing whether the learned representations have symbolic properties.},
+  html={https://link.springer.com/chapter/10.1007/978-3-031-30108-7_10},
 }
 
-@article{einstein1950meaning,
-  abbr={AJP},
-  bibtex_show={true},
-  title={The meaning of relativity},
-  author={Einstein, Albert and Taub, AH},
-  journal={American Journal of Physics},
-  volume={18},
-  number={6},
-  pages={403--404},
-  year={1950},
-  publisher={American Association of Physics Teachers}
+@article{park2021distributed,
+  title={Distributed associative memory network with memory refreshing loss},
+  author={Park, Taewon and Choi, Inchul and Lee, Minho},
+  journal={Neural Networks},
+  volume={144},
+  pages={33--48},
+  year={2021},
+  publisher={Elsevier},
+  abstract={Despite recent progress in memory augmented neural network (MANN) research, associative memory networks with a single external memory still show limited performance on complex relational reasoning tasks. Especially the content-based addressable memory networks often fail to encode input data into rich enough representation for relational reasoning and this limits the relation modeling performance of MANN for long temporal sequence data. To address these problems, here we introduce a novel Distributed Associative Memory architecture (DAM) with Memory Refreshing Loss (MRL) which enhances the relation reasoning performance of MANN. Inspired by how the human brain works, our framework encodes data with distributed representation across multiple memory blocks and repeatedly refreshes the contents for enhanced memorization similar to the rehearsal process of the brain. For this procedure, we replace a single external memory with a set of multiple smaller associative memory blocks and update these sub-memory blocks simultaneously and independently for the distributed representation of input data. Moreover, we propose MRL which assists a task’s target objective while learning relational information existing in data. MRL enables MANN to reinforce an association between input data and task objective by reproducing stochastically sampled input data from stored memory contents. With this procedure, MANN further enriches the stored representations with relational information. In experiments, we apply our approaches to Differential Neural Computer (DNC), which is one of the representative content-based addressing memory models and achieves the state-of-the-art performance on both memorization and relational reasoning tasks.},
+  html={https://www.sciencedirect.com/science/article/pii/S0893608021003014},
+  doi={https://doi.org/10.1016/j.neunet.2021.07.030},
+  selected={true},
 }
 
-@article{PhysRev.47.777,
-  abbr={PhysRev},
-  title={Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author={Einstein, A. and Podolsky, B. and Rosen, N.},
-  abstract={In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal={Phys. Rev.},
-  location={New Jersey},
-  volume={47},
-  issue={10},
-  pages={777--780},
-  numpages={0},
-  year={1935},
-  month={May},
-  publisher=aps,
-  doi={10.1103/PhysRev.47.777},
-  url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf={example_pdf.pdf},
-  altmetric={248277},
-  dimensions={true},
-  google_scholar_id={qyhmnyLat1gC},
-  video={https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ},
-  additional_info={. *More Information* can be [found here](https://github.com/alshedivat/al-folio/)},
-  selected={true}
-}
-
-@article{einstein1905molekularkinetischen,
-  title={{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author={Einstein, A.},
-  journal={Annalen der physik},
-  volume={322},
-  number={8},
-  pages={549--560},
-  year={1905},
-  publisher={Wiley Online Library}
-}
-
-@article{einstein1905movement,
-  abbr={Ann. Phys.},
-  title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author={Einstein, A.},
-  journal={Ann. Phys.},
-  volume={17},
-  pages={549--560},
-  year={1905}
-}
-
-@article{einstein1905electrodynamics,
-  title={On the electrodynamics of moving bodies},
-  author={Einstein, A.},
-  year={1905}
-}
-
-@Article{einstein1905photoelectriceffect,
-  bibtex_show={true},
-  abbr={Ann. Phys.},
-  title="{{\"U}ber einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt}",
-  author={Albert Einstein},
-  abstract={This is the abstract text.},
-  journal={Ann. Phys.},
-  volume={322},
-  number={6},
-  pages={132--148},
-  year={1905},
-  doi={10.1002/andp.19053220607},
-  award={Albert Einstein receveid the **Nobel Prize in Physics** 1921 *for his services to Theoretical Physics, and especially for his discovery of the law of the photoelectric effect*},
-  award_name={Nobel Prize}
-}
-
-@book{przibram1967letters,
-  bibtex_show={true},
-  title={Letters on wave mechanics},
-  author={Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year={1967},
-  publisher={Vision},
-  preview={wave-mechanics.gif},
-  abbr={Vision}
+@inproceedings{lee20214w1h,
+  title={4W1H Keyword Extraction based Summarization Model},
+  author={Lee, Seungyeon and Park, Taewon and Lee, Minho},
+  booktitle={2021 International Conference on Electronics, Information, and Communication (ICEIC)},
+  pages={1--4},
+  year={2021},
+  organization={IEEE},
+  publisher={ICEIC},
+  abstract={In this internet era, with rapidly growing online information, there is a need for automatic summarization of textual documents from plethora of available information, making it an interesting area of research. Automatic keyword extraction and text summarization are Natural Language Processing (NLP) tasks for extracting relevant information from the large text documents. 4W1H (Who, When, Where, What, How) keywords are crucial for sentence generation. Despite the potential of 4W1H keywords, there have not been approaches that utilize the keywords in NLP tasks, particularly summarization. In this paper, we propose a new summarization method based on 4W1H keywords extraction which extracts the answer to a question corresponding to each event in QA format. We apply our methods to BERT and ELECTRA models to generate a summary, which are well-known pre-trained Language Models (LMs) in NLP domain, as a baseline. In experiments, our 4W1H keyword extraction method shows promising performance on AI Hub Machine Reading Comprehension (MRC) dataset, recording an extraction performance of an F1-score as 84.93%. Moreover, we show the results of generating a rule-based summarization using keywords extracted with 4W1H.},
+  html={https://ieeexplore.ieee.org/abstract/document/9369820},
 }
