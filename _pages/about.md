@@ -14,9 +14,8 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-I'm a Ph.D. student at Kyungpook National University, advised by Prof. Minho Lee. My research interest is developing reusable, disentangled, and **compositional modular representations** for **compressive memory**-based AI architecture. Therefore, I am currently focusing on the following topics.
-- `Compressive Memory`, or `Memory Augmented Neural Network`
-- `Structured Representation Learning`
-- `Compositional Generalization`, or `Systematic Generalization`
+I'm a Ph.D. student at Kyungpook National University, advised by Prof. Hyun-Chul Kim and Prof. Minho Lee. I am currently focused on advancing **the efficiency and generalization of sequence models**. My work involves **memory-augmented neural architectures** and **modular representation learning** for AI, aiming to enable capabilities such as:
+- `Long-context reasoning`,
+- `Systematic` or `compositional generalization`.
 
-If you're interested in collaborating on research projects related to `compressive memory`, feel free to contact me :blush: Here is my [CV](../assets/pdf/cv_taewon.pdf)!
+If you're interested in talking about the above topic, feel free to contact me :blush: Here is my [CV](../assets/pdf/cv_taewon.pdf)!
