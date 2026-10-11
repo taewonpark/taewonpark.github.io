@@ -1,0 +1,50 @@
+---
+title: "Writing Research Notes on This Site"
+publishedAt: "2026-10-11"
+summary: "A template note showing the supported formatting: math, code, tables, and tags. Replace or delete it."
+tags: ["meta"]
+---
+
+Each note is an `.mdx` file in `content/blog/`. The file name becomes the URL, so this file (`writing-research-notes.mdx`) is served at `/blog/writing-research-notes/`.
+
+## Front matter
+
+```yaml title="content/blog/my-note.mdx"
+---
+title: "Note title"
+publishedAt: "2026-10-11"
+updatedAt: "2026-10-12"   # optional
+summary: "One-line summary shown in the list."
+tags: ["continual-learning", "paper-notes"]
+draft: true               # optional, hides the note from the site
+---
+```
+
+## Math
+
+Inline math such as $W_t = W_{t-1} + \eta \, v_t k_t^\top$ and display math are rendered with KaTeX:
+
+$$
+\mathbf{o}_t = \frac{\phi(\mathbf{q}_t)^\top \sum_{i \le t} \phi(\mathbf{k}_i)\, \mathbf{v}_i^\top}{\phi(\mathbf{q}_t)^\top \sum_{i \le t} \phi(\mathbf{k}_i)}
+$$
+
+## Code
+
+```python title="fast_weight.py"
+import torch
+
+def fast_weight_update(W, k, v, lr=1.0):
+    # Outer-product (Hebbian) write into the fast-weight matrix
+    return W + lr * torch.outer(v, k)
+```
+
+## Tables
+
+| Setting | Value |
+| --- | --- |
+| Optimizer | AdamW |
+| Learning rate | 1e-4 |
+
+---
+
+Delete this file once you add your first real note.
