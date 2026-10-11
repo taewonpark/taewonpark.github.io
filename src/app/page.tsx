@@ -6,7 +6,7 @@ import { PositionList } from "@/components/position-list";
 import { PublicationItem } from "@/components/publication-item";
 import { SectionHeading } from "@/components/section-heading";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { AWARDS, EDUCATION, INDUSTRY } from "@/data/cv";
+import { AWARDS, EDUCATION, INDUSTRY, RESEARCH } from "@/data/cv";
 import { NEWS, SITE } from "@/data/site";
 import { getPublications } from "@/lib/bibtex";
 import { formatMonth } from "@/lib/utils";
@@ -18,6 +18,8 @@ import Markdown from "react-markdown";
 const BLUR_FADE_DELAY = 0.04;
 const NEWS_LIMIT = 5;
 const NOTES_LIMIT = 3;
+// Research positions shown alongside industry roles on the home page.
+const HOME_RESEARCH = new Set(["CMU", "NAIST"]);
 
 const inlineMarkdown = { p: ({ children }: { children?: React.ReactNode }) => <>{children}</> };
 
@@ -112,7 +114,7 @@ export default function Page() {
             <SectionHeading title="Experience" href="/cv/" linkLabel="Full CV" />
           </BlurFade>
           <BlurFade delay={BLUR_FADE_DELAY * 11} inView>
-            <PositionList items={INDUSTRY} />
+            <PositionList items={[...INDUSTRY, ...RESEARCH.filter((r) => HOME_RESEARCH.has(r.short))]} />
           </BlurFade>
         </div>
       </section>

@@ -7,6 +7,8 @@ export type Position = {
   href?: string;
   location: string;
   title: string;
+  // Short tag shown next to the title, e.g. an employment type.
+  note?: string;
   start: string;
   end?: string;
   bullets?: readonly string[];
@@ -55,6 +57,7 @@ export const INDUSTRY: readonly Position[] = [
   },
   {
     organization: "NeoALI",
+    note: "Alternative Military Service",
     short: "NA",
     logo: "/logos/neoali.png",
     location: "Seoul, Republic of Korea",
