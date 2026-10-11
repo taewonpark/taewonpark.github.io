@@ -47,7 +47,14 @@ export function PositionList({ items }: { items: readonly Position[] }) {
                       />
                     </span>
                   </div>
-                  <div className="font-sans text-sm text-muted-foreground">{item.title}</div>
+                  <div className="flex flex-wrap items-center gap-x-2 gap-y-1 font-sans text-sm text-muted-foreground">
+                    {item.title}
+                    {item.note && (
+                      <span className="rounded-md border border-border px-1.5 py-px text-[11px] leading-4">
+                        {item.note}
+                      </span>
+                    )}
+                  </div>
                 </div>
               </div>
               <div className="flex flex-none items-center gap-1 text-right text-xs tabular-nums text-muted-foreground">
